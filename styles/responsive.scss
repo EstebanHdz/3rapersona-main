@@ -1,0 +1,120 @@
+@media only screen and (width <= 1400px) {
+    html, body{
+        font-size: 14px;
+    }   
+    .main{
+        padding: 0 8rem;
+    }
+}
+
+@media only screen and (width <= 1024px) {
+    html, body{
+        font-size: 12px;
+    } 
+    .main{
+        padding: 0 6rem;
+
+        .main-container{
+            overflow-y: scroll;
+            flex-basis: 70%;
+            height: 100vh;
+    
+            scroll-behavior: smooth;
+    
+            .title-page{
+                h1{
+                    font-size: 5rem;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (width <= 860px) {
+    html, body{
+        font-size: 12px;
+    } 
+    .main{
+        padding: 0 3rem;
+
+        .menu{
+            ul{
+                padding-left: 3rem;
+            }
+        }
+
+        .main-container{
+            overflow-y: scroll;
+            flex-basis: 70%;
+            height: 100vh;
+    
+            scroll-behavior: smooth;
+    
+            .title-page{
+                h1{
+                    font-size: 5rem;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (width <= 800px) {
+    html, body{
+        font-size: 12px;
+    } 
+    .main{
+        padding: 0 3rem;
+
+        .menu{
+            ul{
+                padding-left: 3rem;
+            }
+        }
+
+        .main-container{
+            overflow-y: scroll;
+            flex-basis: 70%;
+            height: 100vh;
+    
+            scroll-behavior: smooth;
+    
+            .title-page{
+                h1{
+                    font-size: 4rem;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (width <= 560px) {
+    html, body{
+        font-size: 10px;
+    } 
+    .main{
+        padding: 0 1rem;
+        .menu{
+            flex-basis: 30%;
+            ul{
+                padding-left: 3rem;
+                li{
+                    margin: 2.5rem 0;
+                    a{
+                        font-size: 0.6rem;
+                    }
+                }
+            }
+        }
+        .main-container{
+    
+            .title-page{
+                h1{
+                    font-size: 2.5rem;
+                }
+            }
+        }
+    }
+
+    
+}

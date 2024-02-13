@@ -1,0 +1,362 @@
+@font-face {
+    font-family: "Manrope-thin";
+    src: url("./fonts/manrope-thin.otf");
+}
+@font-face {
+    font-family: "Manrope-light";
+    src: url("./fonts/manrope-light.otf");
+}
+@font-face {
+    font-family: "Manrope-medium";
+    src: url("./fonts/manrope-medium.otf");
+}
+@font-face {
+    font-family: "Metropolis-Light";
+    src: url("./fonts/Metropolis-Light.otf");
+}
+@font-face {
+    font-family: "Metropolis-ExtraLight";
+    src: url("./fonts/Metropolis-ExtraLight.otf");
+}
+
+//$black-color:rgb(48, 48, 48);
+//$black-color:rgb(230, 230, 230);
+$black-color:rgb(222, 216, 194);
+$bg-color1:rgb(23, 23, 23);
+$bg-color2:rgb(59, 59, 59);
+$white-color: rgb(48, 48, 48);
+//$white-color: rgb(230, 230, 230);
+
+
+html, body{
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    overflow: hidden;
+    color: $black-color;
+    //background-color: $white-color;
+    scroll-behavior: smooth;
+}   
+
+.main{
+    position: relative;
+    height: 100vh;
+    //width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    padding: 0 10rem;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+
+    .menu{
+        flex-basis: 30%;
+        ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            padding-left: 5rem;
+            li{
+                
+                margin: 1rem 0;
+                a{
+                    text-decoration: none;
+                    color: $black-color;
+                    font-family: "Manrope-thin";
+                    font-size: 1.2rem;
+                    letter-spacing: .3rem;
+                    transition: all 400ms ease-in-out;
+                }
+                a:hover{
+                    //font-family: "Manrope-medium";
+                    font-weight: bolder;
+                    transition: all 400ms ease-in-out;
+                    margin-left: -1.6rem;
+                }
+                a.selected{
+                    font-family: "Manrope-medium";
+                    margin-left: -1.6rem;
+                }
+                button{
+                    text-decoration: none;
+                    color: $black-color;
+                    font-family: "Manrope-thin";
+                    font-size: 1.2rem;
+                    letter-spacing: .3rem;
+                    background-color: transparent;
+                    border: none;
+                    transition: all 400ms ease-in-out;
+                }
+                button:hover{
+                    //font-family: "Manrope-medium";
+                    font-weight: bolder;
+                    transition: all 400ms ease-in-out;
+                    margin-left: -1.6rem;
+                    cursor: pointer;
+                }
+                button.selected{
+                    font-family: "Manrope-medium";
+                    margin-left: -1.6rem;
+                }
+            }
+        }
+
+    }
+    .main-container{
+        overflow-y: scroll;
+        flex-basis: 70%;
+        height: 100vh;
+
+        scroll-behavior: smooth;
+
+        .title-page{
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            transform-origin: 50% 50%;
+            color: $black-color;
+            h1{
+
+                font-family: "Manrope-thin";
+                font-weight: lighter;
+                font-size: 7rem;
+                margin-top: 0;
+                margin-bottom: 0;
+                color: $black-color;
+                line-height: normal;
+            }
+            h2{
+                margin-top: 0;
+                font-family: "manrope-thin";
+                font-weight: 100;
+                font-size: 2.2rem;
+                letter-spacing: .4rem;
+                color: $black-color;
+            }
+            p{
+                font-family: Arial, Helvetica, sans-serif;
+                font-family: "Metropolis-ExtraLight";
+                letter-spacing: .4rem;
+                font-weight: 50;
+                font-size: 1.3rem;
+                color: $black-color;
+                line-height: 1.5rem;
+                padding: 3rem 0rem;
+                padding-left: 2rem;
+                text-align: justify;
+            }
+            a{
+                font-family: "manrope-medium";
+                letter-spacing: .2rem;
+                font-size: 1.2rem;
+                color: $black-color;
+                margin-top: 3rem;
+                transition: all 400ms ease-in-out;
+                text-decoration: none;
+                padding-left: 2rem;
+            }
+            a:hover{
+                margin-left: 1.6rem;
+                transition: all 400ms ease-in-out;
+            }
+        }
+
+
+
+        .hero-container{
+            h2{
+                margin-top: 0rem;
+            }
+            p{
+                margin-top: 0;
+            }
+        }
+
+
+    }
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .main-container::-webkit-scrollbar {
+        display: none;
+    }
+    
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .main-container {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+    }
+}
+
+
+
+
+
+//#######  GRADIENTS  ###########
+$colorInteractive: rgb(58, 58, 58);
+$color1: rgb(62, 62, 62);
+$color2: rgb(74, 55, 90);
+$color3: rgb(90, 55, 74);
+$color4: rgb(63, 55, 90);
+//$white-color: rgb(74, 55, 90);
+
+$circle-size: 80%;
+$blending: hard-light;
+
+
+
+
+@keyframes moveCircle {
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
+@keyframes moveVertical {
+    0%{
+        transform: translateY(-50%);
+    }
+    50%{
+        transform: translateY(50%);
+    }
+    100%{
+        transform: translateY(-50%);
+    }
+    
+}
+@keyframes moveHorizontal {
+    0%{
+        transform: translateX(-50%) translateY(-10%);
+    }
+    50%{
+        transform: translateX(50%) translateY(10%);
+    }
+    100%{
+        transform: translateX(-50%) translateY(-10%);
+    }
+    
+}
+
+
+
+.gradient-bg{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    overflow: hidden;
+    background: linear-gradient(40deg, $bg-color1, $bg-color2);
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    svg{
+        display: none;
+    }
+
+    .gradients-container{
+        width: 100%;
+        height: 100%;
+        //filter: url(#noiseFilter);
+        background: 
+	linear-gradient(30deg, rgba(0,0,0,0.7), rgba(0,0,0,0.8)),
+	url("data:image/svg+xml,%3Csvg viewBox='0 0 1000 1000' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='10' numOctaves='6' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+    filter: contrast(120%) brightness(150%); 
+    //mix-blend-mode:$blending;
+
+        
+    }
+    .g1{
+        
+        position: absolute;
+        background: radial-gradient(circle at center, rgba($color3, 0.8) 0, rgba($color3, 0) 50%) no-repeat;
+        //mix-blend-mode: $blending;
+
+        width: $circle-size;
+        height: $circle-size;
+
+        top: calc(50% - $circle-size / 2);
+        left: calc(50% - $circle-size / 2);
+
+        transform-origin: calc(50% - 400px);
+        animation: moveCircle 30s reverse infinite;
+
+        opacity: 1;
+    }
+    .g2{
+        
+        position: absolute;
+        background: radial-gradient(circle at center, rgba($color2, 0.8) 0, rgba($color2, 0) 50%) no-repeat;
+        //mix-blend-mode: $blending;
+
+        width: $circle-size;
+        height: $circle-size;
+
+        top: calc(50% - $circle-size / 2);
+        left: calc(50% - $circle-size / 2);
+
+        transform-origin: center center;
+        animation: moveVertical 30s ease infinite;
+
+        opacity: 1;
+    }
+    .g3{
+        
+        position: absolute;
+        background: radial-gradient(circle at center, rgba($color1, 0.8) 0, rgba($color1, 0) 50%) no-repeat;
+        //mix-blend-mode: $blending;
+
+        width: $circle-size;
+        height: $circle-size;
+
+        top: calc(50% - $circle-size / 2 + 200px);
+        left: calc(50% - $circle-size / 2 - 500px);
+
+        transform-origin: calc(50% - 400px);
+        animation: moveHorizontal 30s reverse infinite;
+
+        opacity: 1;
+    }
+    .g4{
+        
+        position: absolute;
+        background: radial-gradient(circle at center, rgba($color4, 0.8) 0, rgba($color4, 0) 50%) no-repeat;
+        //mix-blend-mode: $blending;
+
+        width: $circle-size;
+        height: $circle-size;
+
+        top: calc(50% - $circle-size / 2 + 200px);
+        left: calc(50% - $circle-size / 2 - 500px);
+
+        transform-origin: calc(50% + 400px);
+        animation: moveCircle 20s ease infinite;
+
+        opacity: 1;
+    }
+    .interactive{
+        position: absolute;
+        background: radial-gradient(circle at center, rgba($colorInteractive, 0.8) 0, rgba($colorInteractive, 0) 50%) no-repeat;
+        width: 100%;
+        height: 100%;
+        top: -50%;
+        left: -50%;
+
+        opacity: 0.7;
+    }
+}
+
+
+
+
+
+
+

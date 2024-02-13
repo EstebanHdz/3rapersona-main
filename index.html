@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://use.typekit.net/nyo0ver.css">
+        <link rel="stylesheet" href="./styles/index.css">
+        <link rel="stylesheet" href="./styles/responsive.css">
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12/dist/gsap.min.js"></script>
+        <script src="./scripts/script.js"></script>
+        <title>3raPersona</title>
+    </head>
+    <body onload="start()">
+        <div class="main">
+            <nav class="menu" id="menu">
+                <ul>
+                    <li><button onclick="navigateTo(this,'3raPersona')" href="#3rapersona" class="selected" id="3raPersona-button">-</button></li>
+                    <!--<li><button onclick="navigateTo('Photography')" href="#photography">Photography</button></li>-->
+                    <li><button onclick="navigateTo(this, 'Photography')"  id="Photography-button">Photography</button></li>
+                    <li><button onclick="navigateTo(this, 'Illustration')"  id="Illustration-button">Illustration</button></li>
+                    <li><button onclick="navigateTo(this, 'Web Design')"  id="Web Design-button">Web Design</button></li>
+                    <li><button onclick="navigateTo(this, 'Design')"  id="Design-button">Design</button></li>
+                    <li><button onclick="navigateTo(this, 'Studios')"  id="Studios-button">Studios</button></li>
+                </ul>
+            </nav>
+            <div class="main-container" id="main-container">
+                <section class="hero-container title-page" id="3raPersona">
+                    <h1>3raPersona</h1>
+                    <!--<h2>Esteban Hernández</h2>-->
+                    <p> <em> Esteban Hernández...</em>
+                        Born in México. Sometimes he paints, sometimes he draws, sometimes he writes a story or lines of code; other times he snaps a picture... <br/><br/>
+                        Never knows 100% what he's doing. But always tries to create something new.</p>
+                </section>
+                <section class="photo-container title-page" id="Photography">
+                    <h1>Photography</h1>
+                    <p>I like minimalistic, simple, yet beautiful photographs.
+                        I shoot mostly black & white film. But sometimes I dive into color and/or digital photography.</p>
+                    <a href="https://photo.3rapersona.com" target="_blank">Check out my full porfolio! &gt</a>
+                </section>
+                <section class="illustration-container title-page" id="Illustration">
+                    <h1>Illustration</h1>
+                    <p>Esteban Hernandez Espinoza, born in Mexico.
+                        Sometimes he paints, sometimes he draws, sometimes he writes, othertimes he snaps a picture...
+                        Never knows 100% what he's doing. But always tries to create something new.</p>
+                        
+                    <a href="https://www.instagram.com/3rapersona" target="_blank">Take a look at my work! &gt</a>
+                </section>
+                <section class="webdesign-container title-page" id="Web Design">
+                    <h1>Web Design</h1>
+                    <p>I design and develop unique and creative websites. From landing pages to portfolios and beyond. </p>
+                    <a href="https://www.3rapersona.com" target="_blank">Looking for a website? I can help you! &gt</a>
+                </section>
+                <section class="design-container title-page" id="Design">
+                    <h1>Graphic Design</h1>
+                    <p>I also dive into graphic design for minimalistic and graphic posters and logos. </p>
+                </section>
+                <section class="design-container title-page" id="Studios">
+                    <h1>3raPersona Studios</h1>
+                    <p>Looking for a game? Checkout my games on Appstore and the Playstore! </p>
+                    <a href="photo.3rapersona.com" target="_blank">Visit the studio website! &gt</a>
+                </section>
+            </div>
+        </div>
+
+        <div class="gradient-bg">
+
+            <svg viewBox='0 0 400 400'  xlms="https://www.w3.org/200/svg">
+                <defs>
+                    <filter id="goo">
+                        <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"/>
+                        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8" result="goo"/>
+                        <feBlend in="SourceGrpahic" in2="goo"/>
+                    </filter>
+
+                    <filter id='noiseFilter'>
+                        <feTurbulence 
+                            type='turbulence' 
+                            baseFrequency='10' 
+                            numOctaves='6' 
+                            stitchTiles='stitch'/>
+                    </filter>
+                </defs>
+            </svg>
+
+            <div class="gradients-container">
+                <div class="g1"></div>
+                <div class="g2"></div>
+                <div class="g3"></div>
+                <div class="g4"></div>
+                <div class="interactive"></div>
+            </div>
+        </div>
+    </body>
+</html>
