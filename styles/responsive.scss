@@ -69,6 +69,12 @@
         .menu{
             ul{
                 padding-left: 3rem;
+                li{
+                    margin: 2.5rem 0;
+                    a{
+                        font-size: 0.6rem;
+                    }
+                }
             }
         }
 
@@ -101,7 +107,7 @@
                 li{
                     margin: 2.5rem 0;
                     a{
-                        font-size: 0.6rem;
+                        font-size: 0.5rem;
                     }
                 }
             }
