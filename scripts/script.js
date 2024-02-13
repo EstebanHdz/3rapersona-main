@@ -11,6 +11,8 @@ let currentY = 0
 let targetX = 0
 let targetY = 0
 
+let touchPosY
+
 
 function navigateTo(element, anchor){
     const menu = document.querySelector(".menu");
@@ -50,12 +52,30 @@ function start(){
     targetElements.forEach((target) => observer.observe(target))
 
 
-    addEventListener("wheel", (e) => {
+    window.addEventListener("wheel", (e) => {
         if(e.deltaY < 0){
             scrollDirection = "up"
         }else{
             scrollDirection = "down"
         }
+    })
+
+    window.addEventListener("touchstart", (e) => {
+        touchPosY  = e.touches[0].clientY;
+        
+    })
+
+    window.addEventListener("touchmove", (e) => {
+        const deltaY = e.touches[0].clientY +-touchPosY;
+        
+        if(deltaY < 0){
+            
+            scrollDirection = "down"
+        }else{
+            scrollDirection = "up"
+        }
+
+        touchPosY = e.touches[0].clientY;
     })
 
 
