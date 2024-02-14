@@ -19,13 +19,17 @@
     src: url("./fonts/Metropolis-ExtraLight.otf");
 }
 
-//$black-color:rgb(48, 48, 48);
-//$black-color:rgb(230, 230, 230);
-$black-color:rgb(222, 216, 194);
 $bg-color1:rgb(23, 23, 23);
 $bg-color2:rgb(59, 59, 59);
+
+//$bg-color1:rgb(188, 188, 188);
+//$bg-color2:rgb(226, 226, 226);
+
 $white-color: rgb(48, 48, 48);
-//$white-color: rgb(230, 230, 230);
+$black-color:rgb(222, 216, 194);
+//$black-color: rgb(48, 48, 48);
+//$white-color:rgb(222, 216, 194);
+
 
 
 html, body{
@@ -190,6 +194,22 @@ html, body{
         scrollbar-width: none;  /* Firefox */
     }
 }
+
+
+
+
+
+//#######  LIGHT MODE  ###########
+
+body.light-mode {
+    
+    //background-color: $secondary-color--dark;
+    //color: $text-color--dark;
+}
+.light-mode{
+
+}
+
 
 
 
