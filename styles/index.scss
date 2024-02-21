@@ -18,6 +18,10 @@
     font-family: "Metropolis-ExtraLight";
     src: url("./fonts/Metropolis-ExtraLight.otf");
 }
+@font-face {
+    font-family: "Megrim";
+    src: url("./fonts/Megrim.ttf");
+}
 
 $bg-color1:rgb(23, 23, 23);
 $bg-color2:rgb(59, 59, 59);
@@ -126,7 +130,7 @@ html, body{
             color: $black-color;
             h1{
 
-                font-family: "Manrope-thin";
+                font-family: "Megrim";
                 font-weight: lighter;
                 font-size: 7rem;
                 margin-top: 0;

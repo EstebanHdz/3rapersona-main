@@ -18,6 +18,10 @@
   font-family: "Metropolis-ExtraLight";
   src: url("./fonts/Metropolis-ExtraLight.otf");
 }
+@font-face {
+  font-family: "Megrim";
+  src: url("./fonts/Megrim.ttf");
+}
 html, body {
   height: 100vh;
   width: 100vw;
@@ -107,7 +111,7 @@ html, body {
   color: rgb(222, 216, 194);
 }
 .main .main-container .title-page h1 {
-  font-family: "Manrope-thin";
+  font-family: "Megrim";
   font-weight: lighter;
   font-size: 7rem;
   margin-top: 0;
